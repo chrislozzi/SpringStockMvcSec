@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../static/css/bootstrap.min.css" th:href="@{css/bootstrap.min.css}">
+
+<title>Layout</title>
+</head>
+<body>
+	<div class="container">
+		<div>
+			<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">n'Bazar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link" th:href="@{/index}">Acceuil</a>
+        <a class="nav-link" th:href="@{/article}">Article</a>
+        <a class="nav-link" href="#">Page 2</a>
+        <a class="nav-link" href="#">Page 3</a>
+      </div>
+    </div>
+  </div>
+</nav>
+		</div>
+		<div>
+		<section layout:fragment="content">"hola"</section>
+		</div>
+	</div>
+</body>
+</html>
